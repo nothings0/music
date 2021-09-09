@@ -13,7 +13,7 @@
             <img src="media/logo.png" class="logo">
             <ul>
                 <li><a href="#">Pay Phone</a></li>
-                <li><a href="#">The Nights</a></li>
+                <li><a href="#">La la la</a></li>
                 <li><a href="#">Dusk Till Dawn</a></li>
             </ul>
         </div>
@@ -28,9 +28,9 @@
         </div>
         
     </div>
-    <audio id="mySong">
-        <source src="media/Payphone.mp3" type="audio/mp3">
-    </audio>
+<audio id="mySong">
+    <source src="media/Payphone.mp3" type="audio/mp3">
+</audio>
 <script>
     var mySong = document.getElementById("mySong");
     var icon = document.getElementById("icon");
@@ -41,6 +41,24 @@
             icon.src = "media/pause.png";
         }else{
             mySong.pause();
+            icon.src = "media/play.png";
+        }
+    }
+
+</script>
+<audio id="mySong1">
+    <source src="media/lalala.mp3" type="audio/mp3">
+</audio>
+<script>
+    var mySong = document.getElementById("mySong1");
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        if(mySong1.paused){
+            mySong1.play();
+            icon.src = "media/pause.png";
+        }else{
+            mySong1.pause();
             icon.src = "media/play.png";
         }
     }
