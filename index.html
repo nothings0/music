@@ -12,9 +12,9 @@
         <div class="navbar">
             <img src="media/logo.png" class="logo">
             <ul>
-                <li><a href="#">Pay Phone</a></li>
+                <li><a href="media/index1.html">Pay Phone</a></li>
                 <li><a href="#">La la la</a></li>
-                <li><a href="#" class="mysong2">Dusk Till Dawn</a></li>
+                <li><a href="#">Dusk Till Dawn</a></li>
             </ul>
         </div>
         <div class="content">
@@ -28,32 +28,27 @@
         </div>
         
     </div>
-<audio id="mySong1">
+<audio id="mySong">
     <source src="media/lalala.mp3" type="audio/mp3">
 </audio>
-<audio id="mysong22">
-    <source src="media/Payphone.mp3" type="audio/mp3">
-</audio>
 <script>
-    var mySong1 = document.getElementById("mySong1");
+    var mySong = document.getElementById("mySong");
     var icon = document.getElementById("icon");
-    var mysong2 = document.getElementsByClassName("mysong2")
-    var mysong22 = document.getElementById("mysong22");
     icon.onclick = function(){
-        if(mySong1.paused){
-            mySong1.play();
+        if(mySong.paused){
+            mySong.play();
             icon.src = "media/pause.png";
         }else{
-            mySong1.pause();
+            mySong.pause();
             icon.src = "media/play.png";
         }
     }
-    mysong2.onclick = function(){
-        if(mysong22.paused){
-            mysong22.play();
+    mysong.onclick = function(){
+        if(mysong.paused){
+            mysong.play();
             icon.src = "media/pause.png";
         }else{
-            mysong22.pause();
+            mysong.pause();
             icon.src = "media/play.png";
         }
     }
